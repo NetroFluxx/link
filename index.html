@@ -1,117 +1,101 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Discord Nitro 2026</title>
+<title>Definitely Not a Scam</title>
 
 <style>
-*{
+body{
     margin:0;
-    padding:0;
-    box-sizing:border-box;
+    overflow:hidden;
     font-family:Arial,Helvetica,sans-serif;
+    background:#111827;
+    color:white;
 }
 
-body{
-    background:linear-gradient(135deg,#5865F2,#23272A);
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+.bg span{
+    position:absolute;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:#5865F2;
+    animation:float 10s linear infinite;
+}
+
+@keyframes float{
+    from{transform:translateY(110vh);}
+    to{transform:translateY(-10vh);}
 }
 
 .card{
-    width:420px;
-    background:#2B2D31;
-    padding:35px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:450px;
+    background:rgba(35,39,42,.92);
+    padding:30px;
     border-radius:18px;
     text-align:center;
-    box-shadow:0 20px 50px rgba(0,0,0,.4);
-}
-
-.logo{
-    width:90px;
-    height:90px;
-    background:#5865F2;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:42px;
-    margin:auto;
+    box-shadow:0 0 30px rgba(0,0,0,.5);
 }
 
 h1{
-    margin-top:20px;
-    font-size:32px;
-}
-
-.subtitle{
-    margin-top:10px;
-    color:#B5BAC1;
-    line-height:1.5;
-}
-
-.features{
-    margin-top:25px;
-    text-align:left;
-}
-
-.features p{
-    margin:8px 0;
+    margin:0;
+    color:#5865F2;
 }
 
 button{
-    margin-top:30px;
+    margin-top:25px;
     width:100%;
     padding:16px;
     border:none;
-    border-radius:12px;
+    border-radius:10px;
     background:#5865F2;
     color:white;
     font-size:18px;
     cursor:pointer;
-    transition:.2s;
 }
 
 button:hover{
-    transform:scale(1.03);
-}
-
-.footer{
-    margin-top:18px;
-    color:#888;
-    font-size:12px;
+    transform:scale(1.02);
 }
 </style>
 </head>
-
 <body>
 
+<div class="bg"></div>
+
 <div class="card">
+<h1>🎁 Totally Legit Prize Generator</h1>
 
-<div class="logo">🎁</div>
-
-<h1>Free Discord Nitro 2026</h1>
-
-<p class="subtitle">
-100% Real • No Fake • Limited Event
+<p>
+Congratulations! You've found the world's most trustworthy prize button.*
 </p>
 
-<div class="features">
-<p>✅ 1 Year Nitro</p>
-<p>✅ Instant Activation</p>
-<p>✅ Unlimited Claims*</p>
-<p>✅ No Survey Required</p>
-</div>
+<p><strong>*Results may be musically surprising.</strong></p>
 
-<button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
-Click here for Free Nitro
+<button onclick="window.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
+Claim Your Prize
 </button>
 
+<p style="margin-top:20px;font-size:12px;color:#aaa;">
+This page is a joke.
+</p>
 </div>
+
+<script>
+const bg=document.querySelector(".bg");
+
+for(let i=0;i<80;i++){
+    const s=document.createElement("span");
+    s.style.left=Math.random()*100+"vw";
+    s.style.animationDuration=(5+Math.random()*8)+"s";
+    s.style.animationDelay=Math.random()*8+"s";
+    bg.appendChild(s);
+}
+</script>
 
 </body>
 </html>
